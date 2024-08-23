@@ -1,12 +1,26 @@
 name: 'tech_companies_project'
-version: '1.0'
+version: '1.0.0'
 config-version: 2
 
-# This section defines the default profile to use.
-profile: 'tech_companies_project'
-
-# Define the directory for your models
+# This setting tells dbt where to look for models (SQL files)
 model-paths: ["models"]
 
-# Define where dbt should store artifacts
+# Directory where dbt should output the compiled SQL
 target-path: "target"
+
+# Directory where dbt should output the compiled and executed files
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+# Directory where dbt should find and write macros and other dependencies
+macro-paths: ["macros"]
+
+# Specify the profile to use
+profile: tech_companies_profile
+
+# Define the source and schema
+models:
+  tech_companies_project:
+    # Default schema to use for models under this project
+    +schema: main  # This sets the schema for models in this project to "main"

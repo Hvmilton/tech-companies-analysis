@@ -4,11 +4,13 @@ version = "0.1.0"
 description = "A project for analyzing data related to tech companies"
 authors = ["Josh <jhvmilton@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
 duckdb = "^1.0.0"
 pandas = "^2.2.2"
+dbt = "^1.0"
 
 
 [build-system]
