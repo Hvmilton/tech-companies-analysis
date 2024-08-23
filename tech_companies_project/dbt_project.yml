@@ -1,0 +1,12 @@
+name: 'tech_companies_project'
+version: '1.0'
+config-version: 2
+
+# This section defines the default profile to use.
+profile: 'tech_companies_project'
+
+# Define the directory for your models
+model-paths: ["models"]
+
+# Define where dbt should store artifacts
+target-path: "target"
