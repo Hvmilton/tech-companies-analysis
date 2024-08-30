@@ -2,6 +2,6 @@ tech_companies_profile:
   outputs:
     dev:
       type: duckdb
-      path: "C:/Users/Josh/Documents/GitHub/tech-companies-analysis/tech_companies_project/tech_companies.duckdb"
+      path: "C:/Users/jhvmi/Documents/GitHub/TECH-COMPANIES-ANALYSIS/tech_companies_project/tech_companies.duckdb"
       schema: "main"
   target: dev
